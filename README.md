@@ -17,19 +17,19 @@ set:
 
 Some statistics about the dataset:
 
-- There are *683* MathGloss terms
-- These are related to *2079* external (WikiData) entities
+- There are **683** MathGloss terms
+- These are related to **2079** external (WikiData) entities
 - There are:
-    - 587 terms with Freebase IDs
-    - 443 terms with Chicago labels
-    - 232 terms with Lean labels
-    - 157 terms with mulima labels
-    - 409 terms with nLab labels
-    - 683 terms with Wikidata IDs
+    - **587** terms with Freebase IDs
+    - **443** terms with Chicago labels
+    - **232** terms with Lean labels
+    - **157** terms with mulima labels
+    - **409** terms with nLab labels
+    - **683** terms with Wikidata IDs
 
 The following files provide some additional statistics about the database:
 
 - `stats/disconnected.json`: MathGloss nodes which have no incoming or outgoing relations (9)
-- `stats/isolated.json': MathGloss nodes which are not related to other
+- `stats/isolated.json`: MathGloss nodes which are not related to other
   MathGloss concepts (333)
 - `stats/labels.csv`: All relation labels, with their frequencies
