@@ -1,0 +1,166 @@
+[
+  {
+    "term": {
+      "identity": 9601,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Freebase ID": "/m/04zxygb",
+        "lean": "conditioning (probability)",
+        "Microsoft Academic ID": "45262634",
+        "mulima": "",
+        "nlab": "",
+        "wikidata": "Q5159291",
+        "chicago": "",
+        "OpenAlex ID": "C45262634"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:9601"
+    }
+  },
+  {
+    "term": {
+      "identity": 10009,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Freebase ID": "/m/0z6tqg5",
+        "lean": "",
+        "Microsoft Academic ID": "38484669",
+        "mulima": "",
+        "nlab": "fiber functor",
+        "wikidata": "Q16897605",
+        "chicago": "fiber translation functor",
+        "nLab ID": "fiber functor"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:10009"
+    }
+  },
+  {
+    "term": {
+      "identity": 10027,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Freebase ID": "/m/02ppx23",
+        "lean": "",
+        "Microsoft Academic ID": "29877031",
+        "Commons category": "Filled Julia sets",
+        "mulima": "",
+        "nlab": "",
+        "wikidata": "Q5448799",
+        "chicago": "filled julia set"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:10027"
+    }
+  },
+  {
+    "term": {
+      "identity": 10271,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Google Knowledge Graph ID": "/g/120z6qgg",
+        "lean": "",
+        "mulima": "heterogenous algebra",
+        "nlab": "",
+        "wikidata": "Q1616174",
+        "chicago": ""
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:10271"
+    }
+  },
+  {
+    "term": {
+      "identity": 10356,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Freebase ID": "/m/0h1fm40",
+        "lean": "induced topology",
+        "Microsoft Academic ID": "2780737188",
+        "mulima": "",
+        "nlab": "",
+        "wikidata": "Q17130880",
+        "chicago": ""
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:10356"
+    }
+  },
+  {
+    "term": {
+      "identity": 10667,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Freebase ID": "/m/043v01_",
+        "lean": "",
+        "Microsoft Academic ID": "124842641",
+        "Great Russian Encyclopedia portal ID": "lokal-no-konechnoe-semeistvo-865cf6",
+        "mulima": "",
+        "nlab": "",
+        "wikidata": "Q643300",
+        "chicago": "locally finite cover"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:10667"
+    }
+  },
+  {
+    "term": {
+      "identity": 11060,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Freebase ID": "/m/026dxm7",
+        "lean": "",
+        "Microsoft Academic ID": "2780116478",
+        "mulima": "",
+        "nlab": "",
+        "wikidata": "Q7134470",
+        "chicago": "paradoxical set"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:11060"
+    }
+  },
+  {
+    "term": {
+      "identity": 11307,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Google Knowledge Graph ID": "/g/11g0gdgd9m",
+        "lean": "",
+        "mulima": "",
+        "nlab": "",
+        "wikidata": "Q55643339",
+        "chicago": "relative cycle"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:11307"
+    }
+  },
+  {
+    "term": {
+      "identity": 11490,
+      "labels": [
+        "Term"
+      ],
+      "properties": {
+        "Google Knowledge Graph ID": "/g/11h9vqkpv0",
+        "lean": "",
+        "mulima": "",
+        "nlab": "subrepresentation",
+        "wikidata": "Q55648664",
+        "chicago": "subrepresentation",
+        "nLab ID": "subrepresentation"
+      },
+      "elementId": "4:f5255ab9-c4ef-449d-81fa-767a132e3926:11490"
+    }
+  }
+]
