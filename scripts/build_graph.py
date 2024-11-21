@@ -18,7 +18,7 @@ HEADERS = {
     'User-Agent': 'parmesan/0.3',
 }
 QUERY = """
-select distinct ?subject ?subjectLabel ?propertyLabel {
+select distinct ?itemLabel ?subject ?subjectLabel ?propertyLabel {
   {wd:%s owl:sameAs ?item} UNION { VALUES (?item) {(wd:%s)}}
   ?item ?predicate ?subject .
   ?property wikibase:directClaim ?predicate .
@@ -65,6 +65,7 @@ class GraphBuilder:
             subject = binding['subject']
             subjectLabel = binding['subjectLabel']
             label = binding['propertyLabel']
+            new_label = binding['itemLabel']['value']
             if subject['type'] == 'uri':
                 parsed = urlparse(subject['value'])
                 relations.append({
@@ -78,34 +79,36 @@ class GraphBuilder:
                     'value': subject['value'],
                 })
 
-        return (relations, properties)
+        return (relations, properties, new_label)
 
     @staticmethod
     def _create_term(tx, row):
+
+        (relations, new_props, new_label) = GraphBuilder.get_wikidata_relations(row["Wikidata ID"])
 
         term = tx.run("CREATE (term:Term) "
                "SET term.wikidata = $wikidata, "
                "term.chicago = $chicago, "
                "term.lean = $lean, "
                "term.mulima = $mulima, "
-               "term.nlab = $nlab "
+               "term.nlab = $nlab, "
+               "term.wikidata_label = $wikidata_label "
                "RETURN term",
             wikidata=row["Wikidata ID"],
+            wikidata_label=new_label,
             chicago=row["Chicago"],
             lean=row["Lean 4 Undergrad"],
             mulima=row["MuLiMa"],
             nlab=row["nLab"],
         ).single()
-
         term_id = term['term'].element_id
-        (relations, new_props) = GraphBuilder.get_wikidata_relations(row["Wikidata ID"])
 
         for relation in relations:
             tx.run("""
                 MATCH (term:Term {wikidata: $wikidata})
                 OPTIONAL MATCH (target {wikidata: $target})
                 FOREACH (a IN CASE WHEN target.wikidata IS NULL THEN [1] ELSE [] END |
-                    CREATE (term)-[:REL {label: $label}]->(ext:External {wikidata: $target, name: $name})
+                    CREATE (term)-[:REL {label: $label}]->(ext:External {wikidata: $target, name: $name, wikidata_label: $wikidata_label})
                 )
                 FOREACH (a IN CASE WHEN target.wikidata IS NULL THEN [] ELSE [1] END |
                     CREATE (term)-[:REL {label: $label}]->(target)
@@ -114,6 +117,7 @@ class GraphBuilder:
                 target=relation['target'],
                 label=relation['label'],
                 name=relation['name'],
+                wikidata_label=new_label,
             )
         for prop in new_props:
             tx.run("""
