@@ -108,7 +108,8 @@ class GraphBuilder:
                 MATCH (term:Term {wikidata: $wikidata})
                 OPTIONAL MATCH (target {wikidata: $target})
                 FOREACH (a IN CASE WHEN target.wikidata IS NULL THEN [1] ELSE [] END |
-                    CREATE (term)-[:REL {label: $label}]->(ext:External {wikidata: $target, name: $name, wikidata_label: $wikidata_label})
+                    CREATE (term)-[:REL {label: $label}]->(ext:External
+                        {wikidata: $target, wikidata_label: $name})
                 )
                 FOREACH (a IN CASE WHEN target.wikidata IS NULL THEN [] ELSE [1] END |
                     CREATE (term)-[:REL {label: $label}]->(target)
