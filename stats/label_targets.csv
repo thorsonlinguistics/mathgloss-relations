@@ -1,0 +1,101 @@
+﻿r_label,target_label,rel_frequency,target_frequency
+subclass of,element,1053,28
+subclass of,function,1053,28
+subclass of,set,1053,18
+subclass of,topological space,1053,14
+subclass of,module,1053,13
+subclass of,abelian group,1053,12
+subclass of,measure,1053,12
+subclass of,binary operation,1053,11
+subclass of,group,1053,11
+subclass of,subset,1053,11
+maintained by WikiProject,WikiProject Mathematics,529,528
+maintained by WikiProject,WikiProject Computer Science,529,1
+different from,injection,410,6
+different from,boundary,410,4
+different from,mapping cone,410,4
+different from,minimal polynomial,410,3
+different from,p-group,410,3
+different from,commutant,410,3
+different from,kernel,410,3
+different from,interval,410,2
+different from,cone,410,2
+different from,partial derivative,410,2
+instance of,theorem,318,37
+instance of,mathematical concept,318,35
+instance of,Wikimedia disambiguation page,318,14
+instance of,binary operation,318,14
+instance of,invariant,318,10
+instance of,property,318,9
+instance of,type of mathematical function,318,8
+instance of,function,318,7
+instance of,mathematical term,318,7
+instance of,lemma,318,5
+studied in,category theory,260,54
+studied in,group theory,260,17
+studied in,Lie theory,260,11
+studied in,calculus,260,10
+studied in,linear algebra,260,9
+studied in,graph theory,260,8
+studied in,set theory,260,8
+studied in,measure theory,260,6
+studied in,homological algebra,260,6
+studied in,abstract algebra,260,6
+described by source,ISO 80000-2:2019 Quantities and units — Part 2: Mathematics,222,29
+described by source,Great Soviet Encyclopedia (1926–1947),222,25
+described by source,Brockhaus and Efron Encyclopedic Dictionary,222,15
+described by source,Encyclopædia Britannica 11th edition,222,15
+described by source,"Meyers Konversations-Lexikon, 4th edition (1885–1890)",222,13
+described by source,Small Brockhaus and Efron Encyclopedic Dictionary,222,12
+described by source,"Armenian Soviet Encyclopedia, vol. 1",222,7
+described by source,New Encyclopedic Dictionary,222,7
+described by source,Armenian Soviet Encyclopedia,222,7
+described by source,Q2041543,222,6
+has characteristic,associativity,154,10
+has characteristic,right-uniqueness,154,7
+has characteristic,left-totality,154,5
+has characteristic,closure,154,5
+has characteristic,identity element,154,4
+has characteristic,left-uniqueness,154,3
+has characteristic,magnitude of a complex number,154,2
+has characteristic,fixed-point property,154,2
+has characteristic,arity,154,2
+has characteristic,commutative property,154,2
+part of,list of theorems,146,28
+part of,list of types of sets,146,17
+part of,group theory,146,6
+part of,list of properties of sets of reals,146,5
+part of,linear algebra,146,4
+part of,measure space,146,4
+part of,mathematics,146,3
+part of,mathematical analysis,146,2
+part of,inner product space,146,2
+part of,set of complex numbers,146,2
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Riemann%20sum%20convergence.png,144,2
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Extrema%20example.svg,144,2
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Flowchart%20procedural%20programming.svg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Associativity%20of%20binary%20operations%20%28without%20question%20marks%29.svg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Bijection.svg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Binary%20operations%20as%20black%20box.svg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Cantor-like%20Column%20Capital%20Ile%20de%20Philae%20Description%20d%27Egypte%201809.jpg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Runge%20theorem.svg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Cantor%20dust.svg,144,1
+image,http://commons.wikimedia.org/wiki/Special:FilePath/Alternating%20group%204%3B%20cycle%20graph%3B%20subgroup%20of%20S4.svg,144,1
+has part(s),abelian group,127,10
+has part(s),set,127,8
+has part(s),binary operation,127,6
+has part(s),interior,127,3
+has part(s),vector space,127,2
+has part(s),endomorphism,127,2
+has part(s),boundary,127,2
+has part(s),topological manifold,127,2
+has part(s),node,127,2
+has part(s),regular measure,127,2
+topic's main category,Category:Addition,117,1
+topic's main category,Category:Adjoint functors,117,1
+topic's main category,Category:Affine space,117,1
+topic's main category,Q10128988,117,1
+topic's main category,Category:Algebras,117,1
+topic's main category,Category:Algorithms,117,1
+topic's main category,Category:Antiderivative,117,1
+topic's main category,Category:Banach spaces,117,1
