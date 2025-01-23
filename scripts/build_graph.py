@@ -106,14 +106,11 @@ class GraphBuilder:
         for relation in relations:
             tx.run("""
                 MATCH (term:Term {wikidata: $wikidata})
-                OPTIONAL MATCH (target {wikidata: $target})
-                FOREACH (a IN CASE WHEN target.wikidata IS NULL THEN [1] ELSE [] END |
-                    CREATE (term)-[:REL {label: $label}]->(ext:External
-                        {wikidata: $target, wikidata_label: $name})
-                )
-                FOREACH (a IN CASE WHEN target.wikidata IS NULL THEN [] ELSE [1] END |
-                    CREATE (term)-[:REL {label: $label}]->(target)
-                )""",
+                MERGE (target {wikidata_label: $name})
+                ON CREATE
+                    SET target:External, target.wikidata = $target
+                MERGE (term)-[:REL {label: $label}]->(target)
+                """,
                 wikidata=row['Wikidata ID'],
                 target=relation['target'],
                 label=relation['label'],
